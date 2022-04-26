@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_26_164724) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_26_170427) do
   create_table "soups", force: :cascade do |t|
     t.string "name"
     t.string "ingredients"
     t.boolean "vegetarian", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_url"
   end
 
 end
