@@ -1,0 +1,16 @@
+<b>These are the soups!</b>
+
+<% @soups.each do |soup| %>
+  <p>id: <%= soup.id %></p>
+  <p>name: <%= soup.name %></p>
+  <p>vegetarian: <%= soup.vegetarian %></p>
+  <a href="/soups/<%= soup.id %>"><img src="<%= soup.image_url %>"></a>
+  <hr>
+<% end %>
+
+<style>
+img {
+  width: auto;
+  height: 400px
+}
+</style>
